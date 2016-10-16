@@ -1262,7 +1262,7 @@ var tween8 = new TimelineMax()
 new ScrollMagic.Scene ({
 	triggerElement: '#eightPin',
 	triggerHook: 0,
-	duration: '900%'
+	duration: '800%'
 })
 	.setTween(tween8)
 	.setPin('#eightPin')

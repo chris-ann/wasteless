@@ -5,13 +5,9 @@ var wastecount = 0;
 jQuery( document ).ready(function() {
 
     jQuery(".homelink").empty();
-    jQuery("ul.menu li:not(:first)").append("<hr>");
-    jQuery("ul.menu li:not(:first)").addClass("toggle");
-//    jQuery(".item-102").addClass("toggle");
-//    jQuery(".item-102").append("<hr>");
-//    jQuery(".item-103").addClass("toggle");
-//    jQuery(".item-103").append("<hr>");
-    
+    jQuery("header ul.menu li:not(:first)").append("<hr>");
+    jQuery("header ul.menu li:not(:first)").addClass("toggle");
+
     console.log("hello");
     
     window.addEventListener("scroll", function(e){
