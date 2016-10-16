@@ -86,7 +86,7 @@ nav#main ul li {
 }
 
 nav#main ul li a:link, nav#main ul li a:visited {
-	font-size: 1em; 
+    font-size: 1em; 
 	display: block;
 	width: 90px;
 	color: #808182;

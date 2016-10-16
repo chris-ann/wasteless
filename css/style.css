@@ -1,7 +1,7 @@
 body {
 	font-family: 'Noto Sans', 'Open Sans', Helvetica, Helvetica Nue, Arial, sans-serif;
 /*	color: #64C998;*/
-	font-size: 14px;
+	
 	line-height: 1.25em;
 /*	position: fixed;*/
 }
@@ -10,6 +10,10 @@ html, body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+section { 
+    font-size: 14px;
 }
 
 p {
