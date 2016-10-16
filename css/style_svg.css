@@ -1,0 +1,1634 @@
+/*SVG STYLING*/
+
+
+/*MAKE ALL THE SVG LINES THE SAME STROKE WEIGHT */
+
+rect,
+circle,
+ellipse,
+line,
+polyline,
+polygon,
+path,
+g {
+	vector-effect: non-scaling-stroke;
+}
+
+
+/*This is where all the styles go for classes and id's inside of the svgs*/
+
+svg {
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+	display: block;
+}
+
+.landfillData path,
+.landfillData ellipse,
+.landfillData g {
+	stroke-width: 1.5;
+}
+
+#navBar .st0 {
+	fill: none;
+	stroke: #BDBEBF;
+	stroke-width: 2;
+}
+
+#navBar .st1, #navBar .navElem {
+	fill: #FFFFFF;
+	stroke: #BDBEBF;
+	stroke-width: 2;
+}
+
+
+/********************************************/
+
+
+/*MAKE MEDIA QUERIES FOR STROKE WIDTHS*/
+
+
+/**********************************************/
+/*
+.ripple .st0 {
+	fill: none;
+	stroke: #454445;
+	stroke-width: 0.5;
+}
+
+.aside-icon .st0 {
+	fill: #434345;
+}
+
+.aside-icon .st1 {
+	fill: #808285;
+}
+
+.aside-icon .st2 {
+	fill: #FFFFFF;
+}
+*/
+
+.aside-icon .st0 {
+	fill: none;
+	stroke: #808285;
+	stroke-width: 0.5;
+}
+
+.aside-icon .st1 {
+	fill: #434345;
+}
+
+.aside-icon .st2 {
+	fill: #808285;
+}
+
+.aside-icon .st3 {
+	fill: #FFFFFF;
+}
+
+/************************************************/
+
+#mouse .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#mouse .st1 {
+	fill: #78F2B6;
+}
+
+#mouse .st2 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+.lethLandGreen .st0 {
+	fill: #CCFFE6;
+}
+
+.lethLandGreen .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+.lethLandGreen .st2 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+.lethLandGreen .st3 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+.lethLandGreen .st4 {
+	fill: #64C998;
+}
+
+.lethLandGreen .st5 {
+	fill: none;
+	stroke: #53A87F;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+.lethLandGreen .st6 {
+	fill: #64C998;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+.lethLandBlue .st0 {
+	fill: #A3D3E6;
+}
+
+.lethLandBlue .st1 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.lethLandBlue .st2 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.lethLandBlue .st3 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.lethLandBlue .st4 {
+	fill: #1095C8;
+}
+
+.lethLandBlue .st5 {
+	fill: none;
+	stroke: #53A87F;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.lethLandBlue .st6 {
+	fill: #0C79A3;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.lethLandBlue .st7 {
+	fill: #FFFFFF;
+}
+
+.lethLandBlue .st8 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+#arrow .st0 {
+	fill: none;
+	stroke: #64C998;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+
+/**************************************/
+
+
+#section1 .st0 {
+	fill: none;
+}
+
+#section1 .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#section1 .st2 {
+	fill: #78F2B6;
+}
+
+#section1 .st3 {
+	fill: #FFFFFF;
+}
+
+#section1 .st4 {
+	fill: #FFFFFF;
+	stroke: #64C998;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#section1 .st5 {
+	fill: #64C998;
+}
+
+#frontClouds .st0 {
+	fill: none;
+}
+#frontClouds .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+
+/**************************************/
+#cloudCover1 .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#cloudCover1 .st1 {
+	fill: none;
+}
+#cloudCover2 .st0,
+#cloudCover2-1 .st0 {
+	fill: none;
+}
+#cloudCover2 .st1,
+#cloudCover2-1 .st1 {
+	fill: #858585;
+	stroke: #78787A;
+}
+
+#cloudsFront .st0 {
+	fill: none;
+}
+
+#cloudsFront .st1 {
+	fill: #858585;
+	stroke: #78787A;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#cloudsFront .st2 {
+	fill: #D1D3D4;
+	stroke: #A7A7A8;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#cloudsFront .st3 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#cloudsBack .st0 {
+	fill: #D1D3D4;
+	stroke: #A7A7A8;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#cloudsBack .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#cloudsBack .st2 {
+	fill: #858585;
+	stroke: #78787A;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+/****************************************/
+#factoryLandBack .st0 {
+	fill: #CCFFE6;
+}
+
+#factoryLandBack .st1 {
+	fill: none;
+	stroke: #64C998;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#factoryLandBack .st2 {
+	fill: none;
+	stroke: #53A87F;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#factoryLandBack .st3 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#factoryLandFront .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#factoryLandFront .st1 {
+	fill: #CCFFE6;
+}
+
+#factoryLandFront .st2 {
+	fill: none;
+	stroke: #64C998;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#factoryLandFront .st3 {
+	fill: none;
+	stroke: #53A87F;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#factoryBack .st0 {
+	fill: none;
+}
+
+#factoryBack .st1 {
+	fill: #858585;
+	stroke: #78787A;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#factoryBack .st2 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#factoryBack .st3 {
+	fill: #64C998;
+	stroke: #78F2B6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#factoryBack .st4 {
+	fill: #78F2B6;
+}
+
+#factoryFront .st0 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#factoryFront .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#factoryFront .st2 {
+	fill: #CCFFE6;
+}
+#factoryFront .st3 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#factoryFront .st4 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#resSheep .st0 {
+	fill: #78F2B6;
+}
+#resSheep .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#resSheep .st2 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#resIngot .st0 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#resIngot .st1 {
+	fill: #78F2B6;
+}
+#resTree .st0 {
+	fill: #CCFFE6;
+}
+#resTree .st1 {
+	fill: #64C998;
+	stroke: #78F2B6;
+}
+#resRadioactive .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#resRadioactive .st1 {
+	fill: #78F2B6;
+}
+#resRadioactive .st2 {
+	fill: #6BC397;
+}
+#resLogs .st0 {
+	fill: #78F2B6;
+	stroke: #78F2B6;
+}
+#resLogs .st1 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#resLogs .st2 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#resLogs .st3 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#resLogs .st4 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#resCart .st0 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#resCart .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#resCart .st2 {
+	fill: #78F2B6;
+}
+#resOil .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#resOil .st1 {
+	fill: #6BC397;
+}
+#resOil .st2 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#prodClam .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#prodBag .st0 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#prodBag .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#prodBag .st2 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#prodBattery .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#prodBattery .st1 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#prodShoe .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#prodCup .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#prodCup .st1 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#prodNews .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#prodPhone .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/*********************************************/
+#garb1 .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb1 .st1 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb1 .st2 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb1 .st3 {
+	fill: #64C998;
+}
+#garb1 .st4 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#garb1 .st5 {
+	fill: #CCFFE6;
+}
+#garb1 .st6 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#garb1 .st7 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#garb1 .st8 {
+	fill: #78F2B6;
+}
+#garb1 .st9 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#garb1 .st10 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#garb2 .st0 {
+	fill: #64C998;
+}
+#garb2 .st1 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#garb2 .st2 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#garb2 .st3 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#garb2 .st4 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb2 .st5 {
+	fill: #78F2B6;
+}
+#garb2 .st6 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb2 .st7 {
+	fill: #CCFFE6;
+}
+#garb3 .st0 {
+	fill: #64C998;
+}
+#garb3 .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#garb3 .st2 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb3 .st3 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#garb3 .st4 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#garb3 .st5 {
+	fill: #FFFFFF;
+}
+#garb4 .st0 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#garb4 .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#garb4 .st2 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb4 .st3 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb4 .st4 {
+	fill: #64C998;
+}
+#garb4 .st5 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#garb4 .st6 {
+	fill: #FFFFFF;
+}
+#garb5 .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#garb5 .st1 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb5 .st2 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#garb5 .st3 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linejoin: round;
+}
+#garb5 .st4 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garb5 .st5 {
+	fill: #CCFFE6;
+}
+#dozer .st0 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#dozer .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#dozer .st2 {
+	fill: #78F2B6;
+}
+#land .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#land .st1 {
+	fill: #CCFFE6;
+}
+#land .st2 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#land .st3 {
+	fill: #FFFFFF;
+}
+#land .st4 {
+	fill: none;
+}
+#land .st5 {
+	fill: none;
+	stroke: #64C998;
+	stroke-linecap: round;
+}
+#land .st6 {
+	fill: none;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#landTrees .st0 {
+	fill: #CCFFE6;
+}
+#landTrees .st1 {
+	fill: none;
+	stroke: #64C998;
+	stroke-linecap: round;
+}
+#bridge .st0 {
+	fill: #CCFFE6;
+}
+#bridge .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#bridge .st2 {
+	fill: #78F2B6;
+}
+#bridge .st3 {
+	fill: none;
+}
+#bridge .st4 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#landBack .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#landBack .st1 {
+	fill: #CCFFE6;
+}
+#landBack .st2 {
+	fill: none;
+	stroke: #64C998;
+	stroke-linecap: round;
+}
+
+/*****************************/
+.icon {
+	bottom: 3%;
+}
+#recyIcon .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#recyIcon .st1 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#orgIcon .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#orgIcon .st1 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#garbIcon .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#garbIcon .st1 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#garbData .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#recyData .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#recyData .st1 {
+	fill: none;
+	stroke: #78F2B6;
+}
+#orgData .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#orgData .st1 {
+	fill: #CCFFE6;
+	stroke: #78F2B6;
+}
+#recyBin .st0 {
+	fill: #FFFFFF;
+}
+#recyBin .st1 {
+	fill: #0099CC;
+}
+#recyBin .st2 {
+	fill: #808285;
+}
+#orgBin .st0 {
+	fill: #FFFFFF;
+}
+#orgBin .st1 {
+	fill: #0DB14B;
+}
+#orgBin .st2 {
+	fill: #808285;
+}
+#garbBin .st0 {
+	fill: #FFFFFF;
+}
+#garbBin .st1 {
+	fill: #434345;
+}
+#garbBin .st2 {
+	fill: #808285;
+}
+
+/*********************************/
+#waterTower .st0 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#waterTower .st1 {
+	fill: #CCFFE6;
+}
+#bridgeLong .st0 {
+	fill: #CCFFE6;
+}
+#bridgeLong .st1 {
+	fill: #FFFFFF;
+	stroke: #78F2B6;
+}
+#bridgeLong .st2 {
+	fill: #78F2B6;
+}
+#bridgeLong .st3 {
+	fill: none;
+}
+#bridgeLong .st4 {
+	fill: none;
+	stroke: #78F2B6;
+}
+
+/***********************************/
+#wasteHome .st0 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+}
+#wasteHome .st1 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#wasteHome .st2 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#wasteHome .st3 {
+	fill: none;
+	stroke: #1095C8;
+}
+#wasteHome .st4 {
+	fill: #A3D3E6;
+}
+#wasteHome .st5 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#wasteHome .st6 {
+	fill: #1095C8;
+}
+#wasteHome .st7 {
+	fill: #FFFFFF;
+}
+#wasteHome .st8 {
+	fill: #0099CC;
+}
+#wasteWork .st0 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#wasteWork .st1 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#wasteWork .st2 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#wasteWork .st3 {
+	fill: #FFFFFF;
+}
+
+#wasteWork .st4 {
+	fill: #1095C8;
+}
+
+#wasteWork .st5 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#wasteWork .st6 {
+	fill: #A3D3E6;
+}
+
+#wasteWork .st7 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#wasteWork .st8 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#wasteWork .st9 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#wasteWork .st10 {
+	fill: none;
+}
+#wasteFreeTime .st0 {
+	fill: #A3D3E6;
+}
+#wasteFreeTime .st1 {
+	fill: none;
+	stroke: #1095C8;
+}
+#wasteFreeTime .st2 {
+	fill: #1095C8;
+}
+#wasteFreeTime .st3 {
+	fill: none;
+	stroke: #0C79A3;
+	stroke-linecap: round;
+}
+#wasteFreeTime .st4 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#wasteFreeTime .st5 {
+	fill: none;
+}
+#wasteFreeTime .st6 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#wasteFreeTime .st7 {
+	fill: #0C79A3;
+	stroke: #1095C8;
+}
+.population .st0 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+.population .st1 {
+	fill: #FFFFFF;
+}
+#waterTowerFront .st0 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#waterTowerFront .st1 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#waterTowerFront .st2 {
+	fill: none;
+	stroke: #1095C8;
+}
+#waterTowerBack .st0 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#waterTowerBack .st1 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#waterTowerPile .st0 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#waterTowerPile .st1 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#waterTowerPile .st2 {
+	fill: #A3D3E6;
+}
+#waterTowerPile .st3 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#waterTowerPile .st4 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#waterTowerPile .st5 {
+	fill: #1095C8;
+}
+#trainSceneBridge .st0 {
+	fill: #A3D3E6;
+}
+#trainSceneBridge .st1 {
+	fill: none;
+	stroke: #1095C8;
+}
+#trainSceneBridge .st2 {
+	fill: #1095C8;
+}
+#train .st0 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#train .st1 {
+	fill: #1095C8;
+}
+#train .st2 {
+	fill: #0C79A3;
+	stroke: #1095C8;
+}
+#train .st3 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#train .st4 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linejoin: round;
+}
+#train .st5 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linejoin: round;
+}
+#train .st6 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-linejoin: round;
+}
+#train .st7 {
+	fill: #A3D3E6;
+}
+#train .st8 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtGround .st0 {
+	fill: none;
+	stroke: #1095C8;
+}
+#galtFrontGarb .st0 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtFrontGarb .st1 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtFrontGarb .st2 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtFrontGarb .st3 {
+	fill: #1095C8;
+}
+#galtFrontGarb .st4 {
+	fill: #A3D3E6;
+}
+#galtFront .st0 {
+	fill: #A3D3E6;
+}
+#galtFront .st1 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+}
+#galtFront .st2 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#galtFront .st3 {
+	fill: none;
+	stroke: #1095C8;
+}
+#galtFront .st4 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#galtFront .st5 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtFront .st6 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtMidGarb .st0 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtMidGarb .st1 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtMidGarb .st2 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtMid .st0 {
+	fill: #A3D3E6;
+}
+#galtMid .st1 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+}
+#galtMid .st2 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#galtMid .st3 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtMid .st4 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtMid .st5 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#galtBackGarb .st0 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtBackGarb .st1 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtBackGarb .st2 {
+	fill: #A3D3E6;
+}
+#galtBack .st0 {
+	fill: #A3D3E6;
+}
+#galtBack .st1 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+}
+#galtBack .st2 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#galtBack .st3 {
+	fill: none;
+	stroke: #1095C8;
+}
+#galtBack .st4 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtBack .st5 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#galtBack .st6 {
+	fill: #1095C8;
+}
+#galtBack .st7 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#galtFountain .st0 {
+	fill: none;
+	stroke: #1095C8;
+}
+
+/*************************************/
+#slide1 .st0 {
+	fill: #1095C8;
+}
+#slide2 .st0 {
+	fill: #1095C8;
+}
+#slide2 .st1 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#slide2 .st2 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#slide2 .st3 {
+	fill: #EDFBFF;
+}
+#slide2 .st4 {
+	fill: none;
+}
+#slide3 .st0 {
+	fill: #EDFBFF;
+}
+
+#slide3 .st1 {
+	fill: #A3D3E6;
+}
+
+#slide3 .st2 {
+	fill: #1095C8;
+}
+
+#slide3 .st3 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#slide3 .st4 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#slide3 .st5 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+#slide4 .st0 {
+	fill: #1095C8;
+}
+#slide4 .st1 {
+	fill: #EDFBFF;
+}
+#slide4 .st2 {
+	fill: #0099CC;
+}
+#slide4 .st3 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-linejoin: round;
+}
+#slide4 .st4 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#slide4 .st5 {
+	fill: #A3D3E6;
+}
+#slide4 .st6 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#slide4 .st7 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+#slide5 .st0 {
+	fill: #1095C8;
+}
+#slide5 .st1 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-linecap: round;
+}
+#slide5 .st2 {
+	fill: #1095C8;
+	stroke: #1095C8;
+}
+#slide5 .st3 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+}
+#slide5 .st4 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+}
+#slide5 .st5 {
+	fill: #0C79A3;
+	stroke: #1095C8;
+}
+#slide5 .st6 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-linecap: round;
+}
+#slide5 .st7 {
+	fill: #EDFBFF;
+}
+#slide6 .st0 {
+	fill: #A3D3E6;
+	stroke: #A3D3E6;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#slide6 .st1 {
+	fill: #0C79A3;
+}
+
+#slide6 .st2 {
+	fill: #1095C8;
+}
+
+#slide6 .st3 {
+	fill: none;
+}
+
+#slide6 .st4 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#slide6 .st5 {
+	display: none;
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#slide6 .st6 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#slide6 .st7 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+#slideBorder .st0 {
+	fill: none;
+	stroke: #0C79A3;
+	stroke-width: 4em;
+	stroke-linecap: square;
+}
+
+/********************************/
+#questionMark .st0 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#questionMark .st1 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#questionMark .st2 {
+	fill: #1095C8;
+}
+
+#questionMark .st3 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#questionMark .st4 {
+	fill: #A3D3E6;
+}
+
+#questionMark .st5 {
+	fill: #0C79A3;
+}
+
+#questionMark .st6 {
+	fill: none;
+	stroke: #53A87F;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#questionMark .st7 {
+	fill: #FFFFFF;
+}
+
+#questionMark .st8 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#questionMark .st9 {
+	fill: #A3D3E6;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#questionMark .st10 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+}
+
+#questionMark .st11 {
+	fill: #0C79A3;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+}
+
+#reduceIcon .st0, #reuseIcon .st0, #recycleIcon .st0 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#compostIcon .st0 {
+	fill: none;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#compostIcon .st1 {
+	fill: #FFFFFF;
+	stroke: #1095C8;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}

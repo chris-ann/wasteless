@@ -1,0 +1,115 @@
+/******* ASIDE STYLES ********/
+
+.aside-icon {
+	position: absolute;
+	width: 5%;
+	min-width: 80px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 999999;
+	transition: all 0.4s;
+	transform: scale(1);
+	cursor: pointer;
+	
+	opacity: 0;
+}
+
+.aside-icon:hover {
+	transform: scale(1.05);
+}
+
+.aside {
+	display: none;
+	position: absolute;
+	z-index: 99999;
+	width: 10%;
+	bottom: 100px;
+	right: 20px;
+	min-width: 300px;
+	padding: 0px 10px 20px 10px;
+	background: white;
+	border: 3px solid #d1d3d4;
+	color: #808182;
+}
+
+.aside img {
+	width: 100%;
+	cursor: pointer;
+}
+
+.aside.grid img {
+	width: 46%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	padding: 0px 0px 20px 1%;
+}
+
+.aside:after {
+	content: " ";
+	display: block;
+	border-left: 20px solid transparent;
+  	border-top: 15px solid white;
+	position: absolute;
+	z-index: 99999;
+	bottom: -15px;
+	right: 0px;
+}
+
+.aside:before {
+	content: " ";
+	display: block;
+	border-left: 28px solid transparent;
+  	border-top: 20px solid #d1d3d4;
+	position: absolute;
+	z-index: 99999;
+	bottom: -20px;
+	right: -3px;
+}
+
+.aside-close {
+	position: absolute;
+	width: 15px;
+	top: 5px;
+	right: 5px;
+	stroke: #d1d3d4;
+	stroke-width: 3;
+	transition: stroke 0.5s;
+	cursor: pointer;
+}
+
+.aside-close:hover {
+	stroke: #808182;
+}
+
+.aside a.button:link, .aside a.button:visited{
+	display: inline-block;
+	padding: 5px 10px;
+	color: white;
+	background-color: #1095cb;
+	font-size: 0.8em;
+	transition: 0.5s;
+}
+
+a.green:link, a.green:visited {
+	text-decoration: none;
+	color: #64C998;
+}
+
+a.blue:link, a.blue:visited {
+	text-decoration: none;
+	color: #1095cb;
+}
+
+.aside a.button:hover {
+	background-color: #5ed2ff;
+}
+
+.aside h5 {
+	font-weight: normal;
+}
+
+sup {
+	font-size: 0.5em;
+	font-weight: bold;
+}
+

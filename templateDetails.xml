@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+	<name>Wasteless</name>
+	<creationDate>2016-05-01</creationDate>
+	<author>Chris Clark</author>
+	<authorEmail>hello@chrisann.ca</authorEmail>
+	<authorUrl>http://www.chrisann.ca</authorUrl>
+	<copyright>Environment Lethbridge 2016</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.2</version>
+	<description>Website template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>masthead</position>
+        <position>banner</position>
+		<position>banner1</position>
+        <position>wastepart1</position>
+        <position>wastepart2</position>
+		<position>right</position>
+		<position>left</position>
+		<position>contentnav</position>
+		<position>footer</position>
+		<position>footernav</position>
+	</positions>
+</extension>
