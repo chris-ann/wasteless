@@ -1,6 +1,8 @@
 var distanceY = window.pageYOffset;
 var shrinkOn = 200;
 var wastecount = 0;
+var p = 0;
+var scrollpoint;
 
 jQuery( document ).ready(function() {
 
@@ -13,11 +15,19 @@ jQuery( document ).ready(function() {
     window.addEventListener("scroll", function(e){
         distanceY = window.pageYOffset;
         //console.log(distanceY);
-        if (distanceY < shrinkOn){
+        if (distanceY < shrinkOn || p >= 30){
             show();
         } else {
             hide();
         }
+        // If user scrolls up add to value of p
+        if (distanceY < scrollpoint) {
+            p++;
+        }
+        else {
+            p = 0;
+        }
+        scrollpoint = distanceY;
     });
 
     
@@ -33,7 +43,7 @@ jQuery( document ).ready(function() {
     }); 
 
     function show() {
-        jQuery(".toggle").fadeIn(100);
+        jQuery(".toggle").fadeIn(50);
         jQuery("nav#main").removeClass("mini");
         //console.log("removeMini"); 
     }

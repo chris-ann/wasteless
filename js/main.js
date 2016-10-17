@@ -85,27 +85,33 @@ window.addEventListener('scroll', function () {
 //run update function when page first loads
 navUpdate(window.pageYOffset);
 
-jQuery('.vNav a').hover(function() {
-   jQuery(this).find('.label').show();
-   }, function() {
-   jQuery(this).find('.label').hide();
+jQuery('.navElem').hover(function() {
+    jQuery('#' + jQuery(this).attr("id") + ' + div.label').show();
+    }, function() {
+    jQuery('#' + jQuery(this).attr("id") + ' + div.label').hide();
 });
 
 
 // code to run the asides
-$document.ready(function() {
-	$asideIcon.on("click", function(e) {
-		e.preventDefault();
-		var id = jQuery(this).attr("id");
-//		console.log(id);
-		jQuery('#' + id + ' + .aside').fadeToggle();
-	});
 
-	$asideClose.on("click", function() {
-		fadeAside();
-	});
-
+$asideIcon.on("click", function(e) {
+    e.preventDefault();
+    jQuery('#' + jQuery(this).attr("id") + ' + .aside').fadeToggle();
 });
+
+$asideIcon.bind(".mouseleave", function() {
+    $asideIcon.bind("mouseover", asideHover);
+});
+
+$asideIcon.on("mouseover", function(event) {
+    jQuery('#' + jQuery(this).attr("id") + ' + .aside').fadeIn();
+    $( this ).unbind( event );
+});
+
+$asideClose.on("click", function() {
+    fadeAside();
+});
+
 
 // global so that it can be called in the timelines
 function fadeAside() {
@@ -174,14 +180,18 @@ function checkScrollState() {
 function startScroll() {
 //	console.log('Start!')
 	navScroll.state = false;	// turn it off once you hit play
-	$play.addClass('play-active');
+    $playBtn.addClass('play-active');
+    jQuery('#playIcn').hide();
+	jQuery('#pauseIcn').show();
 	window.scrollBy(0, 5);
 	scrollDelay = setTimeout('startScroll()', 1);
 }
 
 function stopScroll() {
 //	console.log('Stop!')
-	$play.removeClass('play-active');
+	$playBtn.removeClass('play-active');
+    jQuery('#pauseIcn').hide();
+    jQuery('#playIcn').show();
 	clearTimeout(scrollDelay);
 }
 

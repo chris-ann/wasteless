@@ -59,7 +59,7 @@ p {
 
 #nav {
     position: fixed;
-    height: 37%;
+    height: 275px;
     background: white;
     padding: 5px;
     box-shadow: 0px 0px 3px #9a9a9a;
@@ -89,7 +89,7 @@ ul.vNav  {
     position: relative;
     padding: 0px;
     color: rgb(113,135,133);
-    margin-bottom: 37.5px;
+    margin-bottom: 37px;
 }
 .vNav a{
     display: block;
@@ -102,40 +102,74 @@ ul.vNav  {
 .vNav a:hover, .vNav a.active{
     background-color: #9a9a9a;
 }
-.label {
-    position: relative;
+
+.vNav .label {
+    position: absolute;
     left: 25px;
     top: -3px;
     z-index: 999;
+    width: 130px;
     font-size: 1em;
     color: #9a9a9a;
-    background-color: white;
     display: none;
 }
+
+.label mark {
+    background-color: white;
+    padding: 2px 5px;
+}
+
 #playBtn {
     width: 50px;
     height: 50px;
     position: fixed;
+    border: 1px solid #ed6a5a;
+    border-radius: 50%;
     box-shadow: 0px 0px 3px #9a9a9a;
-    bottom: 10px;
-    left: 1.67%;
+    bottom: 20px;
+    left: 1%;
+    background-color: white;
     z-index: 9999999;
-    text-align: center;
     cursor: pointer;
 }
+
+#playBtn.play-active {
+    border: 1px solid #DEDEDE;
+}
+
+#playBtn svg {
+    position: relative; 
+    width: 55%;
+    margin: 0 auto;
+    stroke-linejoin:round;
+    stroke-width:2px;
+}
+#playIcn {
+    left: 3px;
+    fill:#ed6a5a;
+    stroke:#ed6a5a;
+    
+}
+#playBtn svg#pauseIcn {
+    display: none;
+    width: 35%;
+    fill:#DEDEDE;
+    stroke:#DEDEDE;
+}
+
 .play {
     display: block;
     box-sizing: border-box;
     padding: 10px 2px;
-    background-color: #FFF;
-    color: #000;
     width: 100%;
     height: 100%;
 }
+/*
 .play.play-active {
-    background-color: #9a9a9a;
+    background-color: white;
     font-weight: bolder;
 }
+*/
 
 /*
 #nav {
@@ -264,6 +298,7 @@ ul.vNav  {
 .oneContainer p {
 	font-weight: bold;
 	z-index: 1;
+    margin-left: 30px;
 }
 
 /*
@@ -542,6 +577,7 @@ ul.vNav  {
 	font-size: 2.5em;
 	font-weight: bold;
 	z-index: 8;
+    margin-left: 30px;
 }
 
 #s4t10 {
