@@ -218,7 +218,7 @@ var rippleTween = new TimelineMax({repeat: -1, repeatDelay: 1.5})
 
 var mouseWheelAnim = new TimelineMax({repeat: -1, repeatDelay: 0.2})
 	.add('mouseStart')
-	.to($mouse, 0, {x: '-50%', y: '50%'})
+	.to($mouse, 0, {y: '50%'})
 	.fromTo($mouseWheel, 1.25, {y: '-40%', autoAlpha: 0.5}, {y: '30%', autoAlpha: 1}, 'mouseStart')
 	.fromTo($mouseArrow, 1.25, {y: '-40%', autoAlpha: 0.5}, {y: '60%', autoAlpha: 1}, 'mouseStart')
 ;

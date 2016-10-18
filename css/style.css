@@ -59,6 +59,7 @@ p {
 
 #nav {
     position: fixed;
+    width: 20px;
     height: 275px;
     background: white;
     padding: 5px;

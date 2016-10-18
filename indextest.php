@@ -12,6 +12,8 @@
 </head>
 	
 <body>
+    
+    <!---- PLACEHOLDER FOR HEADER ---->
     <script>
         (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -23,14 +25,11 @@
     </script>
     <header class="wrap">
         <nav id="main">
-
             <ul class="nav menu">
                 <li class="item-101"><a class="homelink" href="/" >|</a></li>
                 <li class="item-102 current active toggle"><a href="/waste-in-yql" title="Waste in Lethbridge" >Waste in YQL</a></li>
                 <li class="item-103 toggle"><a href="/yql-resources" title="Resources in YQL" >Resources in YQL</a></li>
             </ul>
-
-
         </nav>
         <div class="clearflt"></div>
         <div id="sociallinks">
@@ -39,7 +38,38 @@
           <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-hashtags="wastelessYQL" data-related="EnviroLeth" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </header>
+    
+    <!--- ADD MAIN CONTENT --->
     <?php include 'wasteinyql.html'; ?> 
+    
+    
+    <!---- PLACEHOLDER FOOTER CONTENT ---->
+    <main >
+        <div class="wrap"><h1>Here are a bunch of resources.</h1></div>
+    </main>
+    <footer>
+        <div class="wrap">
+            <div class="col_320">
+                <h2>Site Pages</h2>
+                <nav>
+                    
+                </nav>
+            </div>
+            <div class="col_320">
+                <h2>Get in Touch</h2>
+                <a class="button blue" href="mailto:info@environmentlethbridge.org">info@environmentlethbridge.org</a>
+            </div>
+            <div class="col_320">
+                <h2>
+                <!-- <p><a href="tel:1-403-330-6241">403-330-6241</a><br>
+                <a href="mailto:info@environmentlethbridge.org">info@environmentlethbridge.org</a></p> -->
+                <img src="/images/EnvironmentLeth_logo.svg" style="width: 60%" alt="Environment Lethbridge Logo"></h2>
+                <p class="copy">&#64; 2016 Environment Lethbridge </p> 
+            </div>
+            <div class="clearflt"></div>
+
+        </div>
+    </footer>
     
 	<!--SCRIPTS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
