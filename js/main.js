@@ -1203,13 +1203,21 @@ function tween7bagsTrig() {
 // Going to need to reconsider how the wasteInfo section will reset when I get all of the new animation triggers and automations working
 var staticAnims = [tween7garDoor, tween7cups, tween7cups, tween7bathroomBox, tween7bathroomBin, tween7mower, tween7bags];
 
+var footerHeight = jQuery("footer").height();
+var totalHeight = jQuery(document).height();
+
 $window.on('scroll', function() {
 	var yPos = window.pageYOffset;
 	var sec7Pos = navFive;
-	
+
 	if(yPos >= (sec7Pos - 75) && yPos < (sec7Pos + 75)) {
 		playStatics();
 	}
+    
+    if(yPos >= (totalHeight - footerHeight - window.innerHeight - 100)) {
+        checkScrollState();
+        console.log("we made it!");
+    }
 });
 
 $nav5.click(function() {
