@@ -1,15 +1,7 @@
 var ctrl = new ScrollMagic.Controller();
-//var scrolling = {state: false};
-//var navScroll = {state: false};
-//var scrollDirection = 'FORWARD';
-//var play = $('.play');
+var yPos = window.pageYOffset;
 
 //THIS MAKES THE SCROLL "EASE" WHEN YOU STOP SCROLLING
-
-//var $window = $(window);
-//var scrollTime = 0.3;
-//var scrollDistance = 150;
-
 $window.on("mousewheel DOMMouseScroll", function (event) {
 	event.preventDefault();
 	var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
@@ -45,14 +37,6 @@ $document.on("click", "a[href^='#']", function (e) {
 	}
 });
 
-// make the nav values work so the colours fill in the appropriate circle
-// the total Y distance to each section set by screen height
-//var navOne = 0;	//#zero
-//var navTwo = window.innerHeight * 7; // number the height is multiplied by depends on how many full height vertical sections the user has to scroll through. //#three
-//var navThree = window.innerHeight * 11; //#four
-//var navFour = window.innerHeight * 37;	//#six
-//var navFive = window.innerHeight * 58;	//#seven
-//var navSix = window.innerHeight * 67;	//#eight
 
 function highlightNav(id) {
     $navElem.attr("class", "navElem"); //takes off class from all navbar a tags
@@ -76,10 +60,24 @@ function navUpdate(distanceY) {
     }
 }
 
+var footerHeight = jQuery("footer").height();
+var totalHeight = jQuery(document).height();
+var resourceStopPos = totalHeight - footerHeight - window.innerHeight -100;
+
 //add scrolling event listner to window
-window.addEventListener('scroll', function () {
-    var scrollPoint = window.pageYOffset; // find out how far the user has scrolled
-    navUpdate(scrollPoint);
+$window.on('scroll', function () {
+	yPos = window.pageYOffset; // find out how far the user has scrolled
+	navUpdate(yPos);
+
+	// if autoscroll is running, stop if it's at the resource section or at the end of the page
+	if ((yPos >= (resourceStopPos) && yPos < resourceStopPos + 10) ||
+		($window.scrollTop() + $window.height() == totalHeight)) {
+		console.log('yarrr');
+		if (!scrolling.state) {
+			scrolling.state = true;
+			checkScrollState();
+		}
+	}
 });
 
 //run update function when page first loads
@@ -93,14 +91,12 @@ jQuery('.navElem').hover(function() {
 
 // make the mouse icon start the autoScroll
 $mouse.on("click", function(){
-	if(!scroll.state){
+		scrolling.state = false;
 		checkScrollState();
-	}
 });
 
 
 // code to run the asides
-
 $asideIcon.on("click", function(e) {
     e.preventDefault();
     jQuery('#' + jQuery(this).attr("id") + ' + .aside').fadeToggle();
@@ -126,7 +122,6 @@ function fadeAside() {
 }
 
 $document.on("scroll", function() {
-//	console.log('call for scroll');
 	scrollDirection = ctrl.info("scrollDirection");
 	
 	if (scrollDirection == 'REVERSE') {
@@ -137,7 +132,6 @@ $document.on("scroll", function() {
 
 // Toggle autoScroll when you click on the play button
 $playBtn.on("click", function () {
-//	console.log('call for click');
 	if(scrolling.state){
 		scrolling.state = false;
 	} else if (!scrolling.state) {
@@ -171,9 +165,8 @@ function checkNavState() {
 
 // Check which class the button has, check if it's paused, and then play it
 function checkScrollState() {
-
-	if(scrollDirection == 'REVERSE') {
-		scrolling.state = true;	// this will make it stop
+	if (scrollDirection == 'REVERSE') {
+		scrolling.state = true; // this will make it stop
 	}
 	if (scrolling.state) {
 		stopScroll();
@@ -181,7 +174,6 @@ function checkScrollState() {
 		startScroll();
 	}
 }
-
 // Start and stop the auto-scrolling
 //var scrollDelay;
 function startScroll() {
@@ -1200,24 +1192,17 @@ function tween7bagsTrig() {
 }
 
 /******************************************************************************/
-// Going to need to reconsider how the wasteInfo section will reset when I get all of the new animation triggers and automations working
+// RUN AND RESET THE STATIC ANIMATIONS
 var staticAnims = [tween7garDoor, tween7cups, tween7cups, tween7bathroomBox, tween7bathroomBin, tween7mower, tween7bags];
 
-var footerHeight = jQuery("footer").height();
-var totalHeight = jQuery(document).height();
 
-$window.on('scroll', function() {
-	var yPos = window.pageYOffset;
+
+$window.on('scroll', function () {
 	var sec7Pos = navFive;
 
-	if(yPos >= (sec7Pos - 75) && yPos < (sec7Pos + 75)) {
+	if (yPos >= (sec7Pos - 75) && yPos < (sec7Pos + 75)) {
 		playStatics();
 	}
-    
-    if(yPos >= (totalHeight - footerHeight - window.innerHeight - 100)) {
-        checkScrollState();
-        console.log("we made it!");
-    }
 });
 
 $nav5.click(function() {
@@ -1230,7 +1215,6 @@ function playStatics() {
 	}
 }
 
-/******************************************************************************/
 
 
 ////////////////////////////////////////////
@@ -1317,8 +1301,8 @@ function shuffle(array) {
     array[i] = t;
   }
   return array;
-}
+};
 
 function addClass(element, cls) {
 	jQuery(element).addClass(cls);
-}
+};
