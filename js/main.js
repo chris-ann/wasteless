@@ -91,6 +91,13 @@ jQuery('.navElem').hover(function() {
     jQuery('#' + jQuery(this).attr("id") + ' + div.label').hide();
 });
 
+// make the mouse icon start the autoScroll
+$mouse.on("click", function(){
+	if(!scroll.state){
+		checkScrollState();
+	}
+});
+
 
 // code to run the asides
 

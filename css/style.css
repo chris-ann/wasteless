@@ -167,72 +167,8 @@ ul.vNav  {
     width: 100%;
     height: 100%;
 }
-/*
-.play.play-active {
-    background-color: white;
-    font-weight: bolder;
-}
-*/
-
-/*
-#nav {
-	position: fixed;
-	height: 40%;
-	min-height: 250px;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 999;
-}
-
-#navBar {
-	height: 100%;
-}
-
-#navBar .navElem:hover{
-    fill: #DEDEDE;
-}
-
-#navBar .navElem.active {
-	fill: #BDBEBF;
-}
-
-#playBtn {
-	width: 50px;
-	height: 50px;
-	position: fixed;
-	bottom: 10px;
-	left: 10px;
-	z-index: 9999999;
-	text-align: center;
-}
-
-.play {
-	background-color: #FFF;
-	color: #000;
-	width: 100%;
-	height: 100%;
-	border: 1px solid #000;
-}
-
-.play.play-active {
-	background-color: #000;
-	font-weight: bolder;
-	border: 1px solid #FFF;
-	
-}
-*/
 
 /************************************************/
-
-#mouse {
-	width: 2%;
-	bottom: 50%;
-    left: 50%;
-    margin-left: -1%;
-	opacity: 1;
-	z-index: 5;
-}
-
 #zero {
 	height: 100%;
 	overflow: hidden;
@@ -257,6 +193,20 @@ ul.vNav  {
 
 .zeroContainer p {
 	opacity: 1;
+}
+
+#mouse {
+	width: 2%;
+	height: auto;
+	bottom: 50%;
+   left: 50%;
+   margin-left: -1%;
+	opacity: 1;
+	z-index: 1000;
+}
+
+#mouse:hover {
+	cursor: pointer;
 }
 
 .lethLand {
@@ -288,15 +238,15 @@ ul.vNav  {
 	width: 100%;
 	height: 33.3333%;
 	height: calc(100%/3);
-/*	background-color: #F5E3FF;*/
 }
 
 .oneContainer {
+/*
 	width: 100%;
 	height: 100%;
+*/
 	width: 100vw;
 	height: 100vh;
-/*	z-index: 0;*/
 }
 
 .oneContainer p {
@@ -358,8 +308,10 @@ ul.vNav  {
 }
 
 .twoContainer {
+/*
 	width: 100%;
 	height: 100%;
+*/
 	width: 100vw;
 	height: 100vh;
 	background-color: #FFFFFF;
@@ -412,8 +364,10 @@ ul.vNav  {
 }
 
 .threeContainer {
+/*
 	height: 95%;
 	width: 100%;
+*/
 	width: 100vw;
 	height: 95vh;
 /*	background-color: darkslategrey;*/
@@ -468,14 +422,14 @@ ul.vNav  {
 #fourPin {
 	width: 100%;
 	height: 5.5555%;
-	height: calc(100% / 18);
-/*	height: calc(1800% / 18);*/
-	
+	height: calc(100% / 18);	
 }
 
 .fourContainer {
+/*
 	width: 100%;
 	height: 100%;
+*/
 	width: 100vw;
 	height: 100vh;
 	vertical-align: bottom;
@@ -530,10 +484,6 @@ ul.vNav  {
 	opacity: 0;
 }
 
-/*
-#WITH .st3, #GARBAGE .st3, #CLOGGED .st0, #ME .st0, #BECA .st0, #CES .st0, #ITI .st0, #OUR .st4 {
-	opacity: 0;
-*/
 }
 /********************************/
 
@@ -598,8 +548,10 @@ ul.vNav  {
 	height: calc(100%/8);
 }
 .fiveContainer {
+/*
 	width: 100%;
 	height: 100%;
+*/
 	width: 100vw;
 	height: 100vh;
 	vertical-align: bottom;
@@ -643,20 +595,6 @@ ul.vNav  {
 	font-weight: bold;
 	font-size: 7em;
 }
-
-/*
-#garbPerc {
-	font-size: 5em;
-}
-
-#recyPerc {
-	font-size: 7em;
-}
-
-#orgPerc {
-	font-size: 9em;
-}
-*/
 
 #garbData {
 	height: 27%;
@@ -742,8 +680,10 @@ ul.vNav  {
 }
 
 .sixContainer {
+/*
 	width: 100%;
 	height: 100%;
+*/
 	width: 100vw;
 	height: 100vh;
 /*	vertical-align: bottom;*/
@@ -893,8 +833,10 @@ ul.vNav  {
 
 .sevenContainer {
 	background-color: #EDFBFF;
+/*
 	width: 100%;
 	height: 100%;
+*/
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -935,8 +877,10 @@ ul.vNav  {
 }
 
 .eightContainer {
+/*
 	width: 100%;
 	height: 100%;
+*/
     width: 100vw;
 	height: 100vh;
 	background-color: #FFFFFF;
