@@ -78,7 +78,8 @@ nav#main ul {
 }
 
 nav#main ul li {
-	display: inline-block;
+	display: block;
+    float: left;
 	opacity: 1;
 	transition: 0.5s;
 	-webkit-transition-delay: 0.5s; /* Safari */
@@ -94,19 +95,18 @@ nav#main ul li a:link, nav#main ul li a:visited {
 	text-transform: uppercase;
 }
 
+
 nav#main ul li:first-child a:link, nav#main ul li:first-child a:visited {
-	background-image: url("../images/Wasteless_Logo.svg");
-	background-repeat: no-repeat;
-	background-size: 200px;
-	background-position: left;
-	margin: 0;
-	margin-left: 0;
-	padding: 0;
-	color: white;
-	font-size: 0.001em;
-    line-height: 7.5em;
 	width: 200px;
 	height: 38px;
+    margin: 0;
+	padding: 0;
+    background-image: url("../images/Wasteless_Logo.svg");
+	background-repeat: no-repeat;
+	background-size: 200px;
+	background-position: top left ;
+	color: white;
+    font-size: 0.0001em;
 	/*transition: .2s;*/
 }
 
@@ -147,7 +147,7 @@ nav#main.mini {
 }
 
 nav#main.mini ul li:first-child a:link {
-	width: 38px;
+	width: 35px;
 	height: 45px;
     transition: .2s;
 	animation-name: logo;
