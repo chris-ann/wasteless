@@ -1,0 +1,150 @@
+body {
+	font-family: 'Noto Sans', 'Open Sans', Helvetica, Helvetica Nue, Arial, sans-serif;
+	line-height: 1.25em;
+	margin: 0;
+}
+
+rect,
+circle,
+ellipse,
+line,
+polyline,
+polygon,
+path,
+g {
+	vector-effect: non-scaling-stroke;
+}
+
+#container div {
+/*	text-align: center;*/
+	font-size: 16px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+svg {
+	stroke-width: 3;
+	stroke-miterlimit: 10;
+	display: block;
+}
+
+img {
+	max-width: 300px;
+}
+
+h4, h5 {
+	font-weight: normal;
+}
+
+/*********************************/
+#patternContainer {
+	width: 0;
+	height: 0;
+}
+/********************************/
+
+.asideMobile {
+	width: 90vw;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: rgba(247, 247, 247, 0.7);
+	-webkit-box-shadow: 0px 0px 17px -1px rgba(184,184,184,0.7);
+	-moz-box-shadow: 0px 0px 17px -1px rgba(184,184,184,0.7);
+	box-shadow: 0px 0px 17px -1px rgba(184,184,184,0.7);
+}
+
+
+aside {
+	padding: 20px 20px 20px 0px;
+	margin-left: 150px;
+}
+
+
+.asideIcon {
+	padding: 20px;
+	max-width: 80px;
+	position: absolute;
+	
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.asideIcon .st0 {
+	fill: none;
+	stroke: #808285;
+	stroke-width: 0.5;
+}
+
+.asideIcon .st1 {
+	fill: #434345;
+}
+
+.asideIcon .st2 {
+	fill: #808285;
+}
+
+.asideIcon .st3 {
+	fill: #FFFFFF;
+}
+/*********************************/
+
+
+#mobileSection1 {
+	width: 100vw;
+	height: 200vw;
+}
+
+#mobileSection2 {
+	width: 100vw;
+	height: 400vw;
+}
+
+#mobileSection3 {
+	width: 100vw;
+	height: 100vw;
+}
+
+#mobileSection4 {
+	width: 100vw;
+	height: 425vw;
+}
+
+#mobileSection5 {
+	width: 100vw;
+	height: 100vw;
+}
+
+#mobileSection6 {
+	width: 100vw;
+	height: 150vw;
+}
+
+#mobileSection7 {
+	width: 100vw;
+	height: 175vw;
+}
+
+#mobileSection8 {
+	width: 100vw;
+	height: 350vw;
+}
+
+#mobileSection9 {
+	width: 100vw;
+	height: 400vw;
+}
+
+#mobileSection10 {
+	width: 100vw;
+	height: 275vw;
+}
+
+/***********************************/
+
+/***********************************/

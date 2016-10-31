@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_svg.css">
 	<link rel="stylesheet" type="text/css" href="css/aside-styles.css">
+    <?php $html = "wasteinyql.html"; ?>
+    
 </head>
 	
 <body>
@@ -40,7 +42,7 @@
     </header>
     
     <!--- ADD MAIN CONTENT --->
-    <?php include 'wasteinyql.html'; ?> 
+    <?php include $html; ?> 
     
     
     <!---- PLACEHOLDER FOOTER CONTENT ---->
@@ -92,6 +94,7 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 	 <script src="js/mainvars.js"></script>
      <script src="js/main.js"></script>
-    <script src="js/scripts.js"></script>
+     <script src="js/scripts.js"></script>
+
 </body>
 </html>

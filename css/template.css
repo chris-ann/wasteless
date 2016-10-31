@@ -126,6 +126,7 @@ nav#main ul li:nth-child(2) a {
 nav hr {
 	margin-top: -22px;
 	transform: rotate(108deg);
+    -webkit-transform: rotate(108deg);
 	position: absolute;
 	width: 50px;
 	background-color:#808182;
@@ -150,10 +151,13 @@ nav#main.mini ul li:first-child a:link {
 	width: 35px;
 	height: 45px;
     transition: .2s;
-	animation-name: logo;
+    background-image: url("../images/Wasteless_Icon.svg");
+    background-position: top left;
+    background-size: 35px;
+	/*animation-name: logo;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in;*/
 }
 
 nav#main.mini ul li.toggle {
@@ -540,17 +544,18 @@ a:hover.button.pink  {
 	border: 2px solid #ed6a5a;
 }
 
+a:hover.button.blue {
+	background: #fff;
+	color: #1095cb;
+	border: 2px solid #1095cb;
+}
+
 /* ----- MEDIA QUERIES -----*/
 
 @media screen and (max-width: 1150px){
 .custombanner #bannertext {
 		top: 13.5vw;
 	}
-}
-a:hover.button.blue {
-	background: #fff;
-	color: #1095cb;
-	border: 2px solid #1095cb;
 }
 
 @media screen and (max-width: 980px){
@@ -677,7 +682,16 @@ a:hover.button.blue {
 
 	body {
 		font-size: 80%;
-	}
+    }
+    
+    #sociallinks {
+        position: fixed;
+        right: 15px;
+        top: 93vh;
+        height: 5vh;
+        z-index: 9999;
+        background-color: white;
+    }
 
 }
 

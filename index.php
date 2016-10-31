@@ -1,11 +1,11 @@
 <?php defined( '_JEXEC' ) or die( 'Restricted access' );
 $Itemid = JRequest::getInt('Itemid');
+$mobile = 0;
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 	<head>
 		<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
-		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta property="og:title" content="Wasteless | An Environment Lethbridge Project" />
 		<meta property="og:description" content="Did you know Lethbrige is one of the most wasteful cities on earth? Wasteless is an online educational tool that makes the case for waste reduction in Lethbridge." />
@@ -17,13 +17,41 @@ $Itemid = JRequest::getInt('Itemid');
         <jdoc:include type="head" />
         <?php JHtml::_('jquery.framework'); ?>
 	  	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/scripts.js"></script>
-		
+        
+        <!-- TEST FOR MOBILE -->
 		<?php if ($Itemid==102) { ?>
-			<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style.css">
-			<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style_svg.css">
-			<link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/aside-styles.css">
+            <?php
+                $html = "wasteinyql.html"; 
+                require_once 'Mobile_Detect.php';
+                $detect = new Mobile_Detect;
+
+                // Any mobile device (phones or tablets).
+                if ( $detect->isMobile() ) {
+                    $html = "wasteinyql-mobile.html"; 
+                    $mobile = 1;
+                }
+                if (preg_match('~MSIE|Internet Explorer~i', $_SERVER['HTTP_USER_AGENT']) || (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false)) {
+                    $html = "wasteinyql-mobile.html"; 
+                    $mobile = 1; 
+                }
+            ?>
+        
+
+            <!-- INCLUDE DESKTOP STYLESHEETS -->
+            <?php if ($mobile==0) { ?>
+                <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style.css">
+                <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style_svg.css">
+                <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/aside-styles.css">
+            <?php } ?>   
+        
+            <!-- INCLUDE MOBILE STYLESHEETS -->
+            <?php if ($mobile==1) { ?>
+                <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style-mobile.css">
+                <link rel="stylesheet" type="text/css" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/style_svg-mobile.css">
+            <?php } ?>
 		<?php } ?>
-		
+        
+
 	</head>
 
 	<body>
@@ -57,7 +85,7 @@ $Itemid = JRequest::getInt('Itemid');
             <jdoc:include type="modules" name="banner1" />
 			
             <?php if ($Itemid==102) { ?>
-                 <?php include 'wasteinyql.html'; ?>  
+                <?php include $html; ?>  
             <?php } ?>
         
             <main>
@@ -92,48 +120,49 @@ $Itemid = JRequest::getInt('Itemid');
 		</div>
 
 		
-      
-      	<?php if ($Itemid==102) { ?>
-      	    <script>
-		      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
-		    </script>
-          
-			<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/svgcheckbx.js"></script>
+      <?php if ($Itemid==102) { ?>
+            <?php if ( $mobile==0) { ?>
+                <script>
+                  window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+                </script>
 
-			<!--SNAP SVG, JUST USING TO GRAB BEZIER POINTS FOR NOW-->
-			<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/snap.svg-min.js"></script>
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/svgcheckbx.js"></script>
 
-			<!-- Include ScrollMagic and GSAP plugin -->
-			<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/TimelineMax.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-            <!--<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/TweenMax.min.js"></script>-->  
-			<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/jquery.gsap.min.js"></script>
-			<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/plugins/DrawSVGPlugin.min.js"></script>
-			<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/plugins/MorphSVGPlugin.min.js"></script>
-			
-			<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>-->
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-			<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-			
-            <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/mainvars.js"></script>
-		    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/main.js"></script>
-            
-	
+                <!--SNAP SVG, JUST USING TO GRAB BEZIER POINTS FOR NOW-->
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/snap.svg-min.js"></script>
 
-			<!-- COMMENT PLUGIN -->
-			<script>
-			(function(d, s, id){
-			  var js,
-			      fjs = d.getElementsByTagName(s)[0],
-			      p = (('https:' == d.location.protocol) ? 'https://' : 'http://'),
-			      r = Math.floor(new Date().getTime() / 1000000);
-			  if (d.getElementById(id)) {return;}
-			  js = d.createElement(s); js.id = id; js.async=1;
-			  js.src = p + "www.opinionstage.com/assets/loader.js?" + r;
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'os-widget-jssdk'));
-			</script>
-    	<?php } ?>
+                <!-- Include ScrollMagic and GSAP plugin -->
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/TimelineMax.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+                <!--<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/TweenMax.min.js"></script>-->  
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/jquery.gsap.min.js"></script>
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/plugins/DrawSVGPlugin.min.js"></script>
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/plugins/plugins/MorphSVGPlugin.min.js"></script>
+
+                <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>-->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+                <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/mainvars.js"></script>
+                <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/main.js"></script>
+
+
+
+                <!-- COMMENT PLUGIN -->
+                <script>
+                (function(d, s, id){
+                  var js,
+                      fjs = d.getElementsByTagName(s)[0],
+                      p = (('https:' == d.location.protocol) ? 'https://' : 'http://'),
+                      r = Math.floor(new Date().getTime() / 1000000);
+                  if (d.getElementById(id)) {return;}
+                  js = d.createElement(s); js.id = id; js.async=1;
+                  js.src = p + "www.opinionstage.com/assets/loader.js?" + r;
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'os-widget-jssdk'));
+                </script>
+            <?php } ?>
+        <?php } ?>
 	</body>
 </html>
