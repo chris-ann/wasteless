@@ -20,6 +20,12 @@ ctrl.scrollTo(function (newpos) {
 	TweenMax.to(window, 0.5, {scrollTo: {y: newpos}, ease:Power1.easeInOut});
 });
 
+jQuery("#begin").on("click", function() {
+   jQuery("html").css("overflow", "visible");
+    jQuery("body").css("overflow", "visible");
+    jQuery("#onboard").fadeOut();
+});
+
 $document.on("click", "a[href^='#']", function (e) {
 	navScroll.state = true;
 	scrolling.state = true;	// forces checkScrollState to turn the scroll off and remove class

@@ -10,6 +10,7 @@ html, body {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
+    overflow: hidden;
 }
 
 section { 
@@ -74,6 +75,7 @@ p {
     height: 100%;
     position: relative;
     z-index: 998;
+    margin-left: 1.5px;
 }
 #navBar .st0 {
     fill: #DEDEDE;
@@ -90,12 +92,12 @@ ul.vNav  {
     position: relative;
     padding: 0px;
     color: rgb(113,135,133);
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 .vNav a{
     display: block;
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     background-color: #DEDEDE;
     border-radius: 50%;
     text-decoration: none;
@@ -136,7 +138,7 @@ ul.vNav  {
 }
 
 #playBtn.play-active {
-    border: 1px solid #DEDEDE;
+    border: 1px solid #B4B4B4;
 }
 
 #playBtn svg {
@@ -157,8 +159,8 @@ ul.vNav  {
 #playBtn svg#pauseIcn {
     display: none;
     width: 35%;
-    fill:#DEDEDE;
-    stroke:#DEDEDE;
+    fill:#B4B4B4;
+    stroke:#B4B4B4;
 }
 
 .play {
@@ -169,6 +171,77 @@ ul.vNav  {
     height: 100%;
 }
 
+#onboard {
+    position: absolute;
+    width: 44%;
+    padding: 20px;
+    left: 50%;
+    margin-left: -22%;
+    top: 20%;
+    background: white;
+    z-index: 99999;
+    box-shadow: 0px 0px 3px #9a9a9a;
+}
+
+#onboard p {
+    text-align: left;
+    padding-top: 10px;
+}
+
+#onboard a {
+    margin-top: 10px;
+    margin-left: 70%;
+    width: 20%;
+    clear: both;
+    text-align: center;
+}
+
+#onboard h3 {
+    margin: 25px 0 ;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#onboard svg {
+    width: 80px;
+    float: left;
+    margin-right: 30px;
+}
+
+#onboard svg#playintro {
+    width: 40px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+#onboard svg#mouseintro {
+    width: 40px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+#onboard div {
+    height: 80px;
+}
+
+#onboard .st0 {
+	fill: none;
+	stroke: #808285;
+	stroke-width: 0.5;
+}
+
+#onboard .st1 {
+	fill: #434345;
+}
+
+#onboard .st2 {
+	fill: #808285;
+}
+
+#onboard .st3 {
+	fill: #FFFFFF;
+}
 /************************************************/
 #zero {
 	height: 100%;
@@ -217,11 +290,11 @@ ul.vNav  {
 }
 
 #s0t1 {
-	bottom: 75%
+	bottom: 70%
 }
 
 #s0t2 {
-	bottom: 65%;
+	bottom: 60%;
 }
 
 #arrow {
