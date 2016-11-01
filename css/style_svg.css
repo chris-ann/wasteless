@@ -44,31 +44,6 @@ svg {
 
 /********************************************/
 
-
-/*MAKE MEDIA QUERIES FOR STROKE WIDTHS*/
-
-
-/**********************************************/
-/*
-.ripple .st0 {
-	fill: none;
-	stroke: #454445;
-	stroke-width: 0.5;
-}
-
-.aside-icon .st0 {
-	fill: #434345;
-}
-
-.aside-icon .st1 {
-	fill: #808285;
-}
-
-.aside-icon .st2 {
-	fill: #FFFFFF;
-}
-*/
-
 .aside-icon .st0 {
 	fill: none;
 	stroke: #808285;

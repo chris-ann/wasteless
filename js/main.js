@@ -162,7 +162,7 @@ $window.keypress(function (e) {
 })
 
 
-// if the navigation is running it doesn't call the "breaks" in the middle of the timelines
+// if the navigation is running it doesn't call the "pauses" in the middle of the timelines
 function checkNavState() {
 	if(!navScroll.state){
 		scrolling.state = true;
@@ -238,7 +238,7 @@ var tween1 = new TimelineMax()
 	.to($s1t2, 0, {'z-index': 5}, '1+=0.5')	// bring it in front of the clouds
 	
 	.call(fadeAside, [], this, '1+=0.7')	// fade popup if it's open (scroll up)
-	.fromTo($aside0, 0.2, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, '1+=0.55')
+	.fromTo($aside1, 0.2, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, '1+=0.55')
 
 	.add('2', '1+=1')
 	
@@ -395,29 +395,6 @@ new ScrollMagic.Scene({
 	.addTo(ctrl);
 
 //START OF SEQUENCE, PINNED AND READY TO ROLL (literally)
-//var garbText = ['#WITH', '#GARBAGE', '#CLOGGED', '#ME', '#BECA', '#CES', '#ITI', '#OUR'];
-//var backGarb = ['#garb5', '#garb4', '#garb3', '#garb2'];
-//var introText = ['#s4t0', '#s4t1', '#s4t2'];
-//var dumpText = ['#s4t6', '#s4t7'];
-//var allLand= ['#land', '#landBack', '#landTrees'];
-//
-//var landwTrees = ['#land', '#landTrees'];
-//
-//var brownStroke = '#8F776D';
-//var brownFill = '#E0C8BE';
-//var darkBrownStroke = '#695850';
-//
-//var garbStroke = ['#garb1 .st0', '#garb1 .st1', '#garb1 .st2', '#garb1 .st4', '#garb1 .st6', '#garb1 .st7', '#garb1 .st9', '#garb1 .st10'];
-//var garbFill = ['#garb1 .st2', '#garb1 .st5', '#garb1 .st6'];
-//
-//var leaves = ['#landLeaves', '.leaf'];
-//var decayStrokes = ['#landFront', '#liner', '#landBranches', '.branch', '#hill1', '#hill2', '.grass'];
-//
-//
-//var meth1 = ['#m3', '#m2', '#m6', '#m8'];
-//var meth2 = ['#m7', '#m1', '#m4', '#m5'];
-//var methAll = meth1.concat(meth2);
-
 var tween4 = new TimelineMax()
 	.to(garbText, 0, {autoAlpha: 0})
 	
@@ -464,7 +441,7 @@ var tween4 = new TimelineMax()
 	.fromTo($GARBAGE, 1/3, {y: '48%'}, {y: '0%'}, 'garbText3+0.1')
 
 	.call(fadeAside, [], this, 'garbText3+=0.4')	// fade popup if it's open on scroll up
-	.fromTo($aside1, 0.25, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, 'garbText3+=0.2')
+	.fromTo($aside2, 0.25, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, 'garbText3+=0.2')
 
 	.call(checkNavState, [], this, 'garbText3+=0.65')
 //	.call(fadeAside, [], this, 'garbText3+=0.7')	// fade popup if it's open
@@ -475,9 +452,9 @@ var tween4 = new TimelineMax()
 	.to($landBack, 0, {autoAlpha: 1, bottom: '-100%'}, 'garbOut')
 
 	.to(backGarb, 1, {bottom: '-110%'}, 'garbOut')		/*trash piles & text make their exit*/
-	.to($aside1, 1, {bottom: '-25%'}, 'garbOut')
+	.to($aside2, 1, {bottom: '-25%'}, 'garbOut')
 	.call(fadeAside, [], this, 'garbOut+=0.1')	// fade popup if it's open
-	.to([backGarb, $aside1], 0, {autoAlpha: 0}, 'garbOut+=1')	// hide the trash piles so they don't show up anywhere
+	.to([backGarb, $aside2], 0, {autoAlpha: 0}, 'garbOut+=1')	// hide the trash piles so they don't show up anywhere
 	.to($WITH, 1, {y: '80%'}, 'garbOut')
 	.to($GARBAGE, 1, {y: '48%'}, 'garbOut')
 
@@ -525,7 +502,7 @@ var tween4 = new TimelineMax()
 	.fromTo($s4t8, 0.5, {bottom: '-25%', y: '50%', left: '3%', autoAlpha: 1}, {bottom: '25%'}, 'landUp1+=1')
 
 	.call(fadeAside, [], this, 'landUp1+=1.7')
-	.fromTo($aside2, 0.5, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, 'landUp1+=1.25')
+	.fromTo($aside3, 0.5, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, 'landUp1+=1.25')
 
 	.call(checkNavState, [], this, 'landUp1+=1.9')
 
@@ -538,7 +515,7 @@ var tween4 = new TimelineMax()
 	.to($hillBack, 1, {x: '-=22%', y: '-=12%', ease: Linear.easeNone}, 'turnLeft')
 	.to($bridge, 0.5, {bottom: '-40%', x: '15%', ease: Linear.easeNone}, 'turnLeft')
 	.to($bridge, 0, {autoAlpha: 0}, 'turnLeft+=0.5')
-	.to($aside2, 0.5, {right: '-25%'}, 'turnLeft')
+	.to($aside3, 0.5, {right: '-25%'}, 'turnLeft')
 	.call(fadeAside, [], this, 'turnLeft')	// fade popup if it's open
 
 	.to($garb1, 1, {bottom: '-=40%', right: '-50%'}, 'turnLeft')	// keep trash in coulee
@@ -816,7 +793,7 @@ var tween6 = new TimelineMax()
 	.fromTo($s6t3, 0.3, {bottom: '65%'}, {autoAlpha: 1, bottom: '60%'}, '1+=0.7')
 
 	.call(fadeAside, [], this, '1+=0.8')	// fade popup if it's open
-	.fromTo($aside3, 0.2, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, '1+=0.65')
+	.fromTo($aside4, 0.2, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, '1+=0.65')
 
 	.call(checkNavState, [], this, '1+=1')
 	
@@ -825,7 +802,7 @@ var tween6 = new TimelineMax()
 	.to(sec6g1, 0.2, {left: '-150%'}, '2')	// move out group1
 	.to([$lethLandBlue1, $lethLandBlue2], 0.2, {bottom: '-100%'}, '2')
 	.to(sec6g1, 0, {autoAlpha: 0})
-	.to($aside3, 0.1, {bottom: '-25%'}, '2')
+	.to($aside4, 0.1, {bottom: '-25%'}, '2')
 	.call(fadeAside, [], this, '2')	// fade popup if it's open
 
 	.from($s6t4, 0.25, {right: '-200%', ease: Linear.easeNone}, '2')
@@ -872,7 +849,7 @@ var tween6 = new TimelineMax()
 	.call(fadeAside, [], this, '5+=0.4')	// fade popup if it's open
 
 	.fromTo($s6t10, 0.5, {bottom: '-50%', 'z-index': 1}, {bottom: '50%'}, '5+=0.25')	
-	.fromTo($aside4, 0.3, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, '5+=0.5')
+	.fromTo($aside6, 0.3, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'}, '5+=0.5')
 
 
 	.call(checkNavState, [], this, '5+=1')
@@ -880,7 +857,7 @@ var tween6 = new TimelineMax()
 /////  6- water tower  /////
 	.add('6', '5+=1.26')
 	.to([$s6t9, $s6t10], 0.25, {bottom: '-50%'}, '6')
-	.to($aside4, 0.25, {bottom: '-25%'}, '6')
+	.to($aside6, 0.25, {bottom: '-25%'}, '6')
 	.call(fadeAside, [], this, '6')	// fade popup if it's open
 	.to($population, 0.25, {bottom: '-=100%'}, '6')
 	.to($s6t11, 0.2, {bottom: '85%'}, '6')

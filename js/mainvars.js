@@ -45,12 +45,13 @@ var $ripple2 = jQuery('.ripple2');
 var $one = jQuery('#one');
 var $s1t1 = jQuery('#s1t1');
 var $s1t2 = jQuery('#s1t2');
-var $aside0 = jQuery('#aside-0');
-var $aside1 = jQuery('#aside-1');
-var $aside2 = jQuery('#aside-2');
-var $aside3 = jQuery('#aside-3');
-var $aside4 = jQuery('#aside-4');
-var $aside5 = jQuery('#aside-5');
+var $aside1 = jQuery('#aside1');
+var $aside2 = jQuery('#aside2');
+var $aside3 = jQuery('#aside3');
+var $aside4 = jQuery('#aside4');
+var $aside5 = jQuery('#aside5');
+var $aside6 = jQuery('#aside6');
+var $aside7 = jQuery('#aside7');
 
 //////////////////////////////////////////////////////////////
 // SECTION 2: CLOUDS
