@@ -1,4 +1,731 @@
  #mobile1 .st0 {
+<<<<<<< HEAD
+ 	fill: #64C998;
+ }
+ 
+ #mobile1 .st1 {
+ 	fill: none;
+ }
+ 
+ #mobile1 .st2 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile1 .st3 {
+ 	fill: #78F2B6;
+ }
+ 
+ #mobile1 .st4 {
+ 	fill: #FFFFFF;
+ }
+ 
+ #mobile1 .st5 {
+ 	fill: #FFFFFF;
+ 	stroke: #64C998;
+ }
+ 
+ #mobile1 .st6 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile1 .st7 {
+ 	fill: #CCFFE6;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile1 .st8 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile1 .st9 {
+ 	fill: #CCFFE6;
+ }
+ 
+ #mobile1 .st10 {
+ 	fill: #64C998;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile1 .st11 {
+ 	fill: none;
+ 	stroke: #53A87F;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ /************************************/
+ 
+ #mobile2 .st0 {
+ 	fill: #D1D3D4;
+ 	stroke: #A7A7A8;
+ }
+ 
+ #mobile2 .st1 {
+ 	fill: #858585;
+ 	stroke: #78787A;
+ }
+ 
+ #mobile2 .st2 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ }
+ 
+ .st3 {
+ 	fill: #64C998;
+ }
+ 
+ #mobile2 .st4 {
+ 	fill: none;
+ }
+ 
+ #mobile2 .st5 {
+ 	fill: none;
+ 	stroke: #78787A;
+ }
+ 
+ #mobile2 .st6 {
+ 	fill: #64C998;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile2 .st7 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile2 .st8 {
+ 	fill: #CCFFE6;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile2 .st9 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile2 .st10 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile2 .st11 {
+ 	fill: #78F2B6;
+ }
+ 
+ #mobile2 .st12 {
+ 	fill: #CCFFE6;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile2 .st13 {
+ 	fill: #CCFFE6;
+ }
+ 
+ #mobile2 .st14 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile2 .st15 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ /************************************/
+ 
+ #mobile3 .st0 {
+ 	fill: #64C998;
+ }
+ 
+ #mobile3 .st1 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile3 .st2 {
+ 	fill: #CCFFE6;
+ }
+ 
+ #mobile3 .st3 {
+ 	fill: none;
+ 	stroke: #64C998;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile3 .st4 {
+ 	fill: none;
+ 	stroke: #53A87F;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile3 .st5 {
+ 	fill: #CCFFE6;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile3 .st6 {
+ 	fill: #78F2B6;
+ }
+ 
+ #mobile3 .st7 {
+ 	fill: none;
+ }
+ 
+ #mobile3 .st8 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile3 .st9 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile3 .st10 {
+ 	fill: #CCFFE6;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile3 .st11 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile3 .st12 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile3 .st13 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile3 .st14 {
+ 	fill: #FFFFFF;
+ }
+ /************************************/
+ 
+ #mobile4 .st0 {
+ 	fill: #64C998;
+ }
+ 
+ #mobile4 .st1 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile4 .st2 {
+ 	fill: #CCFFE6;
+ }
+ 
+ #mobile4 .st3 {
+ 	fill: none;
+ 	stroke: #64C998;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile4 .st4 {
+ 	fill: none;
+ 	stroke: #53A87F;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile4 .st5 {
+ 	fill: #CCFFE6;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile4 .st6 {
+ 	fill: #78F2B6;
+ }
+ 
+ #mobile4 .st7 {
+ 	fill: #FFFFFF;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile4 .st8 {
+ 	fill: #CCFFE6;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile4 .st9 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile4 .st10 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ }
+ 
+ #mobile4 .st11 {
+ 	fill: none;
+ 	stroke: #78F2B6;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile4 .st12 {
+ 	fill: #FFFFFF;
+ }
+ 
+ #mobile4 .st13 {
+ 	fill: none;
+ }
+ 
+ #mobile4 .st14 {
+ 	fill: #434345;
+ }
+ 
+ #mobile4 .st15 {
+ 	fill: #808285;
+ }
+ 
+ #mobile4 .st16 {
+ 	fill: #0099CC;
+ }
+ 
+ #mobile4 .st17 {
+ 	fill: #0DB14B;
+ }
+ /************************************/
+ 
+ #mobile5 .st0 {
+ 	fill: #1095C8;
+ }
+ 
+ #mobile5 .st1 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile5 .st2 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile5 .st3 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile5 .st4 {
+ 	fill: #A3D3E6;
+ }
+ 
+ #mobile5 .st5 {
+ 	fill: #0C79A3;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile5 .st6 {
+ 	fill: #0C79A3;
+ }
+ 
+ #mobile5 .st7 {
+ 	fill: none;
+ 	stroke: #53A87F;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile5 .st8 {
+ 	fill: #FFFFFF;
+ }
+ /************************************/
+ 
+ #mobile6 .st0 {
+ 	fill: #1095C8;
+ }
+ 
+ #mobile6 .st1 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile6 .st2 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile6 .st3 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile6 .st4 {
+ 	fill: #A3D3E6;
+ }
+ 
+ #mobile6 .st5 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile6 .st6 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile6 .st7 {
+ 	fill: #FFFFFF;
+ }
+ 
+ #mobile6 .st8 {
+ 	fill: #0099CC;
+ }
+ 
+ #mobile6 .st9 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile6 .st10 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-width: 2;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile6 .st11 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-width: 2;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile6 .st12 {
+ 	fill: none;
+ }
+ /************************************/
+ 
+ #mobile7 .st0 {
+ 	fill: #1095C8;
+ }
+ 
+ #mobile7 .st1 {
+ 	fill: #A3D3E6;
+ }
+ 
+ #mobile7 .st2 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile7 .st3 {
+ 	fill: none;
+ 	stroke: #0C79A3;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile7 .st4 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile7 .st5 {
+ 	fill: none;
+ }
+ 
+ #mobile7 .st6 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile7 .st7 {
+ 	fill: #0C79A3;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile7 .st8 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ }
+ /************************************/
+ 
+ #mobile8 .st0 {
+ 	fill: #1095C8;
+ }
+ 
+ #mobile8 .st1 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile8 .st2 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile8 .st3 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile8 .st4 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile8 .st5 {
+ 	fill: #A3D3E6;
+ }
+ 
+ #mobile8 .st6 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ .st7 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile8 .st8 {
+ 	fill: none;
+ }
+ 
+ #mobile8 .st9 {
+ 	fill: #0C79A3;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile8 .st10 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile8 .st11 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile8 .st12 {
+ 	fill: #FFFFFF;
+ }
+ /************************************/
+ 
+ #mobile9 .st0 {
+ 	fill: #1095C8;
+ }
+ 
+ #mobile9 .st1 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile9 .st2 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile9 .st3 {
+ 	fill: none;
+ }
+ 
+ #mobile9 .st4 {
+ 	fill: #A3D3E6;
+ }
+ 
+ #mobile9 .st5 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile9 .st6 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile9 .st7 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile9 .st8 {
+ 	fill: #EDFBFF;
+ }
+ 
+ #mobile9 .st9 {
+ 	fill: #0099CC;
+ }
+ 
+ #mobile9 .st10 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile9 .st11 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile9 .st12 {
+ 	fill: #1095C8;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile9 .st13 {
+ 	fill: #0C79A3;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile9 .st14 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile9 .st15 {
+ 	fill: #A3D3E6;
+ 	stroke: #A3D3E6;
+ }
+ 
+ #mobile9 .st16 {
+ 	fill: #0C79A3;
+ }
+ 
+ #mobile9 .st17 {
+ 	display: none;
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ /************************************/
+ 
+ #mobile10 .st0 {
+ 	fill: #1095C8;
+ }
+ 
+ #mobile10 .st1 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile10 .st2 {
+ 	fill: none;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile10 .st3 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ 	stroke-linejoin: round;
+ }
+ 
+ #mobile10 .st4 {
+ 	fill: #A3D3E6;
+ }
+ 
+ #mobile10 .st5 {
+ 	fill: #0C79A3;
+ }
+ 
+ #mobile10 .st6 {
+ 	fill: none;
+ 	stroke: #53A87F;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile10 .st7 {
+ 	fill: #FFFFFF;
+ }
+ 
+ #mobile10 .st8 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile10 .st9 {
+ 	fill: #A3D3E6;
+ 	stroke: #1095C8;
+ }
+ 
+ #mobile10 .st10 {
+ 	fill: #FFFFFF;
+ 	stroke: #1095C8;
+ 	stroke-linecap: round;
+ }
+ 
+ #mobile10 .st11 {
+ 	fill: #0C79A3;
+ 	stroke: #1095C8;
+ }
+=======
             fill: #64C998;
         }
         
@@ -908,3 +1635,4 @@
             stroke-width: 3;
             stroke-miterlimit: 10;
         }
+>>>>>>> 3eb4dd9b3a6a815012908601568be642ef0e1e59

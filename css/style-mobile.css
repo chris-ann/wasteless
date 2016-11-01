@@ -15,7 +15,11 @@ g {
 	vector-effect: non-scaling-stroke;
 }
 
+<<<<<<< HEAD
+div {
+=======
 #container div {
+>>>>>>> 3eb4dd9b3a6a815012908601568be642ef0e1e59
 /*	text-align: center;*/
 	font-size: 16px;
 	display: block;
@@ -137,7 +141,11 @@ aside {
 
 #mobileSection9 {
 	width: 100vw;
+<<<<<<< HEAD
+	height: 450vw;
+=======
 	height: 400vw;
+>>>>>>> 3eb4dd9b3a6a815012908601568be642ef0e1e59
 }
 
 #mobileSection10 {
@@ -146,5 +154,8 @@ aside {
 }
 
 /***********************************/
+<<<<<<< HEAD
+=======
 
 /***********************************/
+>>>>>>> 3eb4dd9b3a6a815012908601568be642ef0e1e59
