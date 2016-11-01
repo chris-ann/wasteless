@@ -1,0 +1,79 @@
+body, html {
+height: 100%;    
+}
+
+body {
+    background-image: url(../images/watercolour_bkg.jpg);
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans', 'Open Sans', Helvetica, Helvetica Nue, Arial, sans-serif;
+	color: #808182;
+	font-size: 100%;
+}
+#landing {
+    position: absolute;
+    width: 50vw;
+    left: 50%;
+    margin-left: -25vw;
+    top: 30%;
+    text-align: center;
+    
+}
+
+#logo {
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px #999; 
+    font-size: 1.7vw;
+}
+
+h3 {
+    font-size: 1.7vw;
+}
+
+#login {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+fieldset {
+    border: none;
+}
+
+fieldset p {
+    margin: 0;
+}
+
+label {
+    font-size: 12px;
+    width: 60px;
+}
+
+input {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#submit-buton input {
+    border: 0;
+    background-color: #808182;
+    color: white;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+	#landing {
+        position: relative;
+        width: 90%;
+        left: 0;
+        margin: auto;
+        top: 10%;
+        font-size: 100%;
+    }
+    body {
+        background-size: 300%;
+        background-position: bottom;
+    }
+}

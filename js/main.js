@@ -20,7 +20,8 @@ ctrl.scrollTo(function (newpos) {
 	TweenMax.to(window, 0.5, {scrollTo: {y: newpos}, ease:Power1.easeInOut});
 });
 
-jQuery("#begin").on("click", function() {
+jQuery("#begin").on("click", function(e) {
+    e.preventDefault();
    jQuery("html").css("overflow", "visible");
     jQuery("body").css("overflow", "visible");
     jQuery("#onboard").fadeOut();
