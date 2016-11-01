@@ -24,6 +24,11 @@ jQuery( document ).ready(function() {
 //            }
 //        }
 //    }
+    
+    if (window.innerWidth < 900) {
+        jQuery(".fb-share-button").attr("data-size","small");
+        jQuery(".twitter-share-button").attr("data-size","small");
+    }
 //    
     
     window.addEventListener("scroll", function(e){

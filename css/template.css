@@ -9,7 +9,7 @@
 	display: none;
 }
 
- html, body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -27,11 +27,6 @@ body {
 	height: 100vh;
 	min-width: 300px;
 }
-
-.item-pagewasteInYql div {
-	height: 100vh;
-}
-
 
 
 #map {
@@ -57,6 +52,8 @@ body {
 header.wrap {
 	padding: 0 0 0 1.67%;
 	margin: 0;
+    width: 89.33%;
+    position: relative;
 }
 
 nav#main {
@@ -182,14 +179,23 @@ nav#main.mini:hover ul li:first-child a:link {
 
 #sociallinks {
 	position: fixed;
+    width: 155px;
+    height: 33px;
 	right: 15px;
 	top: 15px;
 	z-index: 9999;
 }
 
+#sociallinks div {
+float: left;
+ display: inline-block;
+}
+
+/*
 .fb_iframe_widget {
 top: -5px;
 }
+*/
 
 /*nav#main.mini:hover .toggle {
 	opacity: 1;
@@ -574,6 +580,10 @@ a:hover.button.blue {
 		width: 65%;
 		height: 20vw;
 	}
+    
+    body {
+        font-size: 90%;
+    }
 
 }
 
@@ -610,7 +620,7 @@ a:hover.button.blue {
 		width: 100%;
 	}
     footer {
-        background-size: 300%;
+        background-size: 500%;
         background-position: center top;
     }
     footer .col_320 {
@@ -650,16 +660,42 @@ a:hover.button.blue {
 	body {
 		font-size: 90%;
 	}	
+    
+    #sociallinks {
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        top: 2px;
+        right: 10px;
+        z-index: 9999;
+    }
+    
+    #sociallinks div {
+        float: none;
+        display: block;
+        margin-bottom: 2px;
+    }
 
 }
 
 @media screen and (max-width: 600px){ 
-	nav#main {
+    header.wrap {
+       width: 100%;
+    }
+    nav#main {
 		position: relative;
 		width: 96%;
 		padding: 2%;
+        margin-top: 5px;
+        height: auto;
 		box-shadow: none;
 	}
+    
+    nav#main ul li a:link, nav#main ul li a:visited {
+        width: 45px;
+        margin-left: 35px;
+    }
+
 	.bordertext {
 		background: none;
 		border-bottom: none;
@@ -675,23 +711,16 @@ a:hover.button.blue {
 	.custombanner {
 		min-height: 300px;
 		background-size: 140%;
+        padding-top: 15px;
 	}
 	.custombanner #bannertext {
 		top: 10vw;
 	}
 
 	body {
-		font-size: 80%;
+		font-size: 75%;
     }
-    
-    #sociallinks {
-        position: fixed;
-        right: 15px;
-        top: 93vh;
-        height: 5vh;
-        z-index: 9999;
-        background-color: white;
-    }
+
 
 }
 

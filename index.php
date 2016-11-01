@@ -69,17 +69,19 @@ $mobile = 0;
       
 		<div id="container">
 			<header class="wrap">
+                <div id="sociallinks">
+                	<div class="fb-share-button" data-href="http://www.wasteless.ca/waste-in-yql" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.wasteless.ca%2Fwaste-in-yql&amp;src=sdkpreparse">Share</a>
+                    </div>
+                    <div><a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-hashtags="wastelessYQL" data-related="EnviroLeth" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    <div class="clearflt"></div>
+                </div>
 				<nav id="main">
 					
 					<jdoc:include type="modules" name="masthead" />
 
 				</nav>
 				<div class="clearflt"></div>
-              	<div id="sociallinks">
-                	<div class="fb-share-button" data-href="http://www.wasteless.ca/waste-in-yql" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.wasteless.ca%2Fwaste-in-yql&amp;src=sdkpreparse">Share on Facebook</a>
-                  </div>
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-hashtags="wastelessYQL" data-related="EnviroLeth" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
+              	
 			</header>
             
             <jdoc:include type="modules" name="banner1" />

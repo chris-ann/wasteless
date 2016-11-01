@@ -70,8 +70,11 @@ input {
         left: 0;
         margin: auto;
         top: 10%;
-        font-size: 100%;
     }
+
+h3, #logo {
+    font-size: 100%;
+}
     body {
         background-size: 300%;
         background-position: bottom;
