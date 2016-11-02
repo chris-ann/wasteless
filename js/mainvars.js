@@ -299,9 +299,6 @@ var pop = [$row1, $row2, $row3, $row4];
 var galtGardens = [$galtGround, $galtFront, $galtMid, $galtBack, $galtFountain];
 var galtGarb = [$galtBackGarb, $galtMidGarb, $galtFrontGarb];
 
-var $aside3 = jQuery('#aside-3');
-var $aside4 = jQuery('#aside-4');
-var $aside5 = jQuery('#aside-5');
 var $lethLandBlue1 = jQuery('#lethLandBlue1');
 var $lethLandBlue2 = jQuery('#lethLandBlue2');
 var $wasteHome = jQuery('#wasteHome');

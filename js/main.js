@@ -1018,7 +1018,7 @@ new ScrollMagic.Scene ({
 // This is where we show how small actions can make a large impact
 
 var tween7a = new TimelineMax()
-	.to($slide1, 0.75, {autoAlpha: 1})
+	.to($slide1, 1, {autoAlpha: 1})
 //
 	.add('1')
 	.fromTo($slide1, 1, {left: '0%'}, {left: '-100%'}, '1')
@@ -1033,7 +1033,7 @@ var tween7a = new TimelineMax()
 	.call(checkNavState, [], this, '2+=2')
 	.call(tween7cupsTrig, [], this, '2+=2.5')
 //
-	.add('3', '2+=5')
+	.add('3', '2+=8')
 	.to($slide3, 1, {left: '100%'}, '3')
 	.fromTo($slide4, 1, {left: '-100%', bottom: '0%'}, {left: '0%'}, '3')
 	.call(checkNavState, [], this, '3+=2')
@@ -1048,13 +1048,17 @@ var tween7a = new TimelineMax()
 	.call(tween7mowerTrig, [], this, '4+=2.5')
 
 //
-	.add('5', '4+=5.1')
+	.add('5', '4+=5.25')
 	.to($slide5, 1, {left: '-100%'}, '5')
 	.fromTo($slide6, 1, {left: '100%', bottom: '0%'}, {left: '0%'}, '5')
-	.call(checkNavState, [], this, '5+=2')
-	.call(tween7bagsTrig, [], this, '5+=2.5')
+	
+	.call(fadeAside, [], this, '5+=1.9')	// fade popup if it's open on scroll up
+	.call(tween7bagsTrig, [], this, '5+=2')
 
-	.to($slide2, 2, {autoAlpha: 1})
+	.fromTo($aside7, 0.25, {bottom: '-25%', autoAlpha: 1}, {bottom: '0px', right: '0px'},'5+=2.25')
+	
+	.call(checkNavState, [], this, '5+=3')
+	.call(fadeAside, [], this, '5+=3.25')	// fade popup if it's open
 ;
 
 new ScrollMagic.Scene ({
