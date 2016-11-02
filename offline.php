@@ -30,20 +30,20 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" />	
         <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/prelaunch.css">
-		
-        
 
 	</head>
-
 	<body>
+        <img id="backgroundimg" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/watertower_offlinepage.svg">
          <div id="landing">
             <div id="logo">
                 <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/Wasteless_Logo.svg" alt="Wasteless Logo">
                 <hr>
-                <p>On November 9, Wasteless will make the case for waste reduction in Lethbridge.</p>
+                <h3>On November 9, Wasteless will make the case for waste reduction in Lethbridge.</h3>
+                <p>Join us at the <a href="http://environmentlethbridge.ca/" title="Environment Lethbridge">Environment Lethbridge</a> office from 1-2PM for the website launch event.</p>
+                <p>319-6 St. S. Lethbridge, AB</p>
             </div>
 
-            <h3>Join us at the Environment Lethbridge office from 1-2PM for the public launch and exhibit.</h3>
+            
         </div>
         <div id="login">
              <form action="<?php echo JRoute::_('index.php', true); ?>" method="post" id="form-login">
