@@ -1,6 +1,6 @@
 html, body {
 	height: 100vh;
-    overflow: hidden;
+    min-width: 700px;
 }
 
 section { 
@@ -163,11 +163,11 @@ ul.vNav  {
 }
 
 #onboard {
-    position: absolute;
-    width: 44%;
+    position: fixed;
+    width: 500px;
     padding: 20px;
     left: 50%;
-    margin-left: -22%;
+    margin-left: -250px;
     top: 20%;
     background: white;
     z-index: 99999;

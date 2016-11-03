@@ -1,5 +1,6 @@
 var ctrl = new ScrollMagic.Controller();
 var yPos = window.pageYOffset;
+var yPos2; /// NEW VARIABLE
 
 //THIS MAKES THE SCROLL "EASE" WHEN YOU STOP SCROLLING
 $window.on("mousewheel DOMMouseScroll", function (event) {
@@ -69,7 +70,7 @@ function navUpdate(distanceY) {
 
 var footerHeight = jQuery("footer").height();
 var totalHeight = jQuery(document).height();
-var resourceStopPos = totalHeight - footerHeight - window.innerHeight -100;
+var resourceStopPos = totalHeight - footerHeight - window.innerHeight;
 
 //add scrolling event listner to window
 $window.on('scroll', function () {
@@ -129,12 +130,14 @@ function fadeAside() {
 }
 
 $document.on("scroll", function() {
-	scrollDirection = ctrl.info("scrollDirection");
-	
-	if (scrollDirection == 'REVERSE') {
-		checkScrollState();
-		scrollDirection = 'FORWARD';
+	//scrollDirection = ctrl.info("scrollDirection");
+	yPos = window.pageYOffset;
+
+    if (yPos2 > yPos) {
+        checkScrollState();
+		//scrollDirection = 'FORWARD';
 	}
+    yPos2 = window.pageYOffset;
 });
 
 // Toggle autoScroll when you click on the play button
@@ -172,7 +175,7 @@ function checkNavState() {
 
 // Check which class the button has, check if it's paused, and then play it
 function checkScrollState() {
-	if (scrollDirection == 'REVERSE') {
+	if (yPos2 > yPos) {
 		scrolling.state = true; // this will make it stop
 	}
 	if (scrolling.state) {
