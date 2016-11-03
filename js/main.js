@@ -70,7 +70,7 @@ function navUpdate(distanceY) {
 
 var footerHeight = jQuery("footer").height();
 var totalHeight = jQuery(document).height();
-var resourceStopPos = totalHeight - footerHeight - window.innerHeight;
+var resourceStopPos = totalHeight - footerHeight - window.innerHeight - 50;
 
 //add scrolling event listner to window
 $window.on('scroll', function () {
