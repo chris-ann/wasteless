@@ -1,6 +1,5 @@
 body {
 	font-family: 'Noto Sans', 'Open Sans', Helvetica, Helvetica Nue, Arial, sans-serif;
-	line-height: 1.25em;
 	margin: 0;
 }
 
@@ -17,13 +16,14 @@ g {
 
 #mobilewrap div {
 	font-size: 16px;
+	line-height: 1.25em;
 	display: block;
 	position: relative;
 	overflow: hidden;
 }
 
 svg {
-	stroke-width: 1.5;
+	stroke-width: 1;
 	stroke-miterlimit: 10;
 	display: block;
 }
